@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="detailItem"
+            type="com.example.android.movies.ui.detail.DetailItem.DetailItemReview" />
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_review_background"
+        android:padding="@dimen/movie_details_padding"
+        android:text="@{detailItem.review.content}"
+        style="@style/video_and_review_text" />
+
+</layout>

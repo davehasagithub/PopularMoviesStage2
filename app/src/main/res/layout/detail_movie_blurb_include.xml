@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="detailItem"
+            type="com.example.android.movies.ui.detail.DetailItem.DetailItemDetail" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/movieDetailsBlurbBackground"
+        android:padding="@dimen/movie_details_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_movie_original_title"
+            tools:text="original movie title"
+            android:text="@{detailItem.movie.getOriginalTitleTextInParens(context)}"
+            android:visibility="@{detailItem.movie.shouldShowOriginalTitle() ? View.VISIBLE : View.GONE}"
+            style="@style/movie_detail_blurb_original_title" />
+
+        <TextView
+            android:id="@+id/tv_movie_release_date"
+            tools:text="release date"
+            android:text="@{detailItem.movie.getReleaseDateText(context)}"
+            style="@style/movie_detail_blurb" />
+
+        <TextView
+            android:id="@+id/tv_movie_vote_average"
+            tools:text="vote average"
+            android:text="@{detailItem.movie.getRatingSpannable()}"
+            style="@style/movie_detail_blurb" />
+
+    </LinearLayout>
+</layout>

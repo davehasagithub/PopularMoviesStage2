@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="movie_api_key" translatable="false">__INSERT_KEY_HERE__</string>
+
+    <string name="app_name">Poplar Movies</string>
+    <string name="title_most_popular">Most Popular</string>
+    <string name="title_top_rated">Top Rated</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="accessibility_poster">Movie Poster</string>
+    <string name="retry">Retry</string>
+    <string name="not_unavailable">N/A</string>
+    <string name="unknown_video_site">Unsupported Video Site</string>
+    <string name="mark_favorite">Favorite</string>
+    <string name="details_heading_videos">Videos</string>
+    <string name="details_heading_reviews">Reviews</string>
+    <string name="no_movies_found">No Movies Found</string>
+    <string name="failed_to_load_videos">Failed to load videos</string>
+    <string name="failed_to_load_reviews">Failed to load reviews</string>
+
+    <string name="inside_parens" translatable="false">(%1$s)</string>
+    <string name="poster_dimension_ratio" translatable="false">h,1:1.5</string>
+
+</resources>

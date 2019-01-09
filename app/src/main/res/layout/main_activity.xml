@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.android.movies.ui.main.MainActivityViewModel" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:titleEnabled="false"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:layout_collapseMode="pin" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_movies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/movieScrollbar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <TextView
+            android:id="@+id/tv_no_movies_banner"
+            android:visibility="@{safeUnbox(viewModel.emptyLiveData) ? View.VISIBLE : View.GONE}"
+            style="@style/no_movies_banner" />
+
+        <Button
+            android:id="@+id/bt_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{safeUnbox(viewModel.failedLiveData) ? View.VISIBLE : View.GONE}"
+            android:onClick="@{() -> viewModel.onRetryButtonClick()}"
+            android:text="@string/retry" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=5D4037 -->
+    <color name="colorPrimary">#5d4037</color>
+    <color name="colorPrimaryDark">#321911</color>
+    <color name="colorAccent">#BF360C</color>
+
+    <color name="colorContentPane">@color/colorPrimaryDark</color>
+    <color name="moviePlaceholder">#66000000</color>
+    <color name="movieScrollbar">#99ffffff</color>
+    <color name="movieDetailsTextColor">@android:color/white</color>
+    <color name="movieErrorTextColor">#ffb8b8b8</color>
+    <color name="movieDetailsBlurbBackground">#66ffffff</color>
+
+    <color name="ic_launcher_background">#CCCCCC</color>
+
+    <color name="detail_separator_color">#33ffffff</color>
+    <color name="detail_heading_background_color">@android:color/transparent</color>
+    <color name="detail_review_background">#33ffffff</color>
+    <color name="detail_video_background">#33ffffff</color>
+
+    <color name="poster_favorite_background">#cc321911</color>
+    <color name="detail_favorite_background">@color/colorPrimary</color>
+    <color name="detail_favorite_background_disabled">@android:color/transparent</color>
+
+</resources>

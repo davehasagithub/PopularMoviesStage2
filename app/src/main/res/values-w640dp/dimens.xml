@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="movie_grid_small_padding">12dp</dimen>
+    <dimen name="movie_grid_padding">24dp</dimen>
+
+    <dimen name="movie_details_small_padding">6dp</dimen>
+    <dimen name="movie_details_padding">24dp</dimen>
+
+</resources>

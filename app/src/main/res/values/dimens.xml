@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="movie_grid_small_padding">8dp</dimen>
+    <dimen name="movie_grid_padding">16dp</dimen>
+
+    <dimen name="movie_details_small_padding">4dp</dimen>
+    <dimen name="movie_details_padding">16dp</dimen>
+
+    <dimen name="movie_detail_poster_width">140dp</dimen>
+
+    <dimen name="movie_text_medium">20sp</dimen>
+    <dimen name="movie_text_small">16sp</dimen>
+    <dimen name="details_video_icon_size">32dp</dimen>
+
+</resources>

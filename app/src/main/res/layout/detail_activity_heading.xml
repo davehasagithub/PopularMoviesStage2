@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="detailItem"
+            type="com.example.android.movies.ui.detail.DetailItem.DetailItemHeading" />
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detail_heading_background_color"
+        android:paddingTop="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/movie_text_medium"
+        android:textColor="@color/movieDetailsTextColor"
+        android:text="@{detailItem.text}" />
+
+</layout>
