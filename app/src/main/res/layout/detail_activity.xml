@@ -47,25 +47,17 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.constraint.ConstraintLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            <!-- wrapped in ConstraintLayout so we can set a max width -->
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerview_details"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:scrollbars="none"
-                android:scrollbarThumbVertical="@color/movieScrollbar"
-                app:layout_constraintWidth_max="800dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        </android.support.constraint.ConstraintLayout>
+            android:scrollbars="none"
+            android:scrollbarThumbVertical="@color/movieScrollbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </android.support.design.widget.CoordinatorLayout>
 
